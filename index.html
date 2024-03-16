@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Ratio Layout</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 61.8% auto; /* 61.8% is approximately 1/Phi */
+    grid-gap: 10px; /* Adjust the gap as needed */
+  }
+
+  .item {
+    border: 1px solid #333; /* Border for visual distinction */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for the items */
+  }
+
+  .item.a {
+    grid-column: 1; /* This item will take the first column */
+  }
+
+  .item.b {
+    grid-column: 2; /* This item will take the second column */
+  }
+
+  /* You can add more item-specific styles here */
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item a">Content A</div>
+  <div class="item b">Content B</div>
+  <!-- Add more items as needed -->
+</div>
+
+</body>
+</html>

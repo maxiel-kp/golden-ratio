@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-columns: 61.8% auto; /* 61.8% is approximate for 1/Phi */
+    grid-template-rows: auto;
+    /* Other styling here */
+  }
+  
+  .item {
+    /* Styling for the items */
+  }
+  .item.a {
+    grid-column: 1; /* This item will take the first column */
+  }
+  .item.b {
+    grid-column: 2; /* This item will take the second column */
+  }
+  /* More item-specific styles here */
+  
